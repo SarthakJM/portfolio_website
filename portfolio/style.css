@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body 
+{
+    /* background-color: rgb(18, 18, 62);     */
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+nav
+{
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: rgb(18, 18, 62);
+
+}
+nav ul
+{
+    display: flex;
+    justify-content: center;
+}
+nav ul li
+{
+    list-style: none;
+    margin: 0 1rem;
+    color: white;
+    
+}
+nav ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+nav .left
+{
+    font-size: 2rem;
+    margin-left: -150px;
+}
+nav .right
+{
+    /* font-size: 2rem; */
+    margin-right: -150px;
+}
+
+main
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.aside
+{
+    display: flex;
+    flex-direction: column;
+    /* background-color: gray; */
+    width: 80px;
+    padding-top: 255px;
+    align-items: center;
+}
+.aside .fa-brands
+{
+    color: rgb(255, 87, 107);
+    size: 100px;
+    padding: 10px;
+    font-size: 2rem;
+}
+main .left
+{
+    width: 75%;
+    margin: 100px ;
+    
+}
+main .left p
+{
+    color: grey;
+    font-size: 1.5rem;
+    padding-top: 150px;
+    margin-bottom: 10px;;
+    margin-top: 10px;
+
+}
+
+main .left h3
+{
+    font-size: 2rem;
+    padding-top: 10px;                                                  
+}
+main .left h4
+{
+    font-size: 3rem;
+}
+@keyframes changeText 
+{
+    0%, 100% { content: "WebPages"; color: crimson; }
+    25% { content: "Websites"; color: indigo; font-family: 'Times New Roman', Times, serif;}
+    50% { content: "UI Design"; color: cadetblue; font-family:'Courier New', Courier, monospace }
+    /* 75% { content: "Digital Experiences"; } */
+}
+
+h4::before 
+{
+    content: "WebPages";
+    animation: changeText 5s infinite;
+    display: inline-block;
+}
+.button
+{
+    background-color: darkblue;
+    border: none ;
+    border-radius: 30px ;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 30px; 
+    cursor: pointer;
+    /* box-shadow: 0 9px #999; */
+    outline: none;
+}
+.button:hover
+{
+    background-color: azure;
+    color: black;
+}
+button:active
+{
+    transform: translateY(1px);
+}
+main .right
+{
+    width: 20%;
+    padding-top: 150px;
+    padding-right: 240px ;
+ 
+    
+
+}
+main .right img
+{
+     display: flex;
+     padding-right: 20px;
+     border-radius: 10%;
+     float: right ;
+     width: 100%;
+     height: 70%;
+     object-fit: cover;
+     border-radius: 2px solid green;
+}
